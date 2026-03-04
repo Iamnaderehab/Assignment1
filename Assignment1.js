@@ -102,6 +102,18 @@ function join(){
 join();
 
 //Question 11
+function sum(...params) {
+    let summ=0;
+  
+    for (let index = 0; index < params.length; index++) {
+    
+        summ+=params[index];
+        
+    }
+    return summ;
+    
+}
+console.log(sum(10,5,7));
 
 
 //Question 12
@@ -143,9 +155,53 @@ cut();
 /*Part 2 */
 
 //Question 1
+/*for -each => builtin function dont modfiy new array but its perform on it its action of all array
+for of =>  perform action pn its item or value
+ */
+
 
 //Question 2
+/* hoisting => that trying to call variable before define it
+   console.log(5);
+   let x=5;
+
+   TDZ=> in scope cant call variable before define it
+   function add(){
+     console.log(x)
+     let x=5;
+     let y=1;
+   }
+ */
+
+
+
+//Question 3
 /* == > is make acomparison between 2 number and make casting to values
 but === > is make comparison acc to datatype and value
 */
 
+
+
+//Question 4
+/*
+try=>its may be occur error 
+catch=> handle error if occur
+important bec dont make any error
+*/
+
+
+//Question 5
+/*
+conversion=> like casting but manually but change manually like string to number 
+ex: let s=5;
+let a=number(s)
+console.log(a)
+
+correction => casting but auto js will try to make it auto
+ex: function sub(a,b){
+  return a-b;
+
+}
+  console.log("1"-2)
+
+*/
